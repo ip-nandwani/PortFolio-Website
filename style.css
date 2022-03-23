@@ -1,0 +1,422 @@
+body {
+  margin: 0px;
+}
+
+#body-header {
+  height: 55vh;
+  opacity: 0.8;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: unset;
+}
+
+/* body header */
+
+.text-center {
+  text-align: center;
+}
+
+/* navigation list */
+
+.horizontal-list {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin: 6px 15px 0px 15px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu li a {
+  transition: color 0.2s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+  color: #489a49;
+  border-bottom: 1px solid white;
+}
+
+/* name and social icons */
+
+#my-name {
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+  box-shadow: 0px 0px 3px 1px #489a49;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+section:nth-child(2n) {
+  background-color: #f0fbe3;
+}
+
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+
+.section-heading {
+  width: auto;
+  padding: 10px 10px 10px;
+  font-weight: 1000;
+}
+
+.section-heading span {
+  font-size: 35px;
+  color: #489a49;
+  display: inline-block;
+  margin-right: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* about section */
+
+#about {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+#my-image {
+  height: 12rem;
+  width: 12rem;
+  margin: auto;
+  margin-top: -10vh;
+}
+
+#my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px 1px #489a49;
+}
+
+#about-description {
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.text-highlight {
+  color: #489a49;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* skills section */
+
+.skills-display {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill-progress {
+  width: 10rem;
+  height: 1.7rem;
+  background-color: lightgrey;
+  border-radius: 0.8rem;
+}
+
+.skill-progress > div {
+  border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span {
+  font-size: 17px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Work Ex */
+
+.timeline {
+  position: relative;
+  width: 75%;
+}
+
+.timeline-box {
+  position: relative;
+  margin: 5px;
+  width: 40%;
+  left: 5%;
+  min-height: 150px;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+  content: '';
+  position: absolute;
+  top: 33%;
+  right: -13%;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #f59b5c;
+  z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after {
+  content: '';
+  position: absolute;
+  top: 33%;
+  left: -13%;
+  border-radius: 50%;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #f59b5c;
+  z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+  left: 54%;
+}
+
+.timeline-box:nth-child(2n + 1) {
+  text-align: right;
+}
+
+.timeline-divider {
+  position: absolute;
+  width: 0;
+  top: 20%;
+  left: 50%;
+  border: 1px dashed #0096fa6b;
+  height: 49%;
+  color: #433e3f;
+}
+
+.timeline-traveller {
+  position: sticky;
+  top: 35%;
+  transform: rotate(90deg);
+  font-size: 28px;
+  z-index: 2;
+}
+
+.timeline-headings {
+  padding: 8px;
+}
+
+.duration {
+  margin-top: -18px;
+  color: #d5bc00;
+}
+
+/* Contact */
+
+#contact {
+  background: linear-gradient(-45deg, #00802bf0, #191b08);
+  padding-bottom: 40px;
+}
+
+#contact-container {
+  display: flex;
+}
+
+#contact h1,
+#contact h1 span {
+  color: white;
+}
+
+#contact-form {
+  margin-left: 20%;
+}
+
+#contact-form-container {
+  width: 50%;
+}
+
+#my-details-container {
+  width: 35%;
+  margin-left: 6%;
+}
+
+#my-details-container h3 {
+  color: white;
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+
+.my-details-info-container {
+  margin-bottom: 20px;
+  color: #d9dcdd;
+  font-size: 1rem;
+}
+
+.my-details-info-container span {
+  margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+  color: white;
+}
+
+#contact-form input,
+textarea {
+  max-width: 90%;
+  margin: 15px;
+  padding: 4px 10px;
+  border: 0px solid transparent;
+  border-bottom: 2px solid white;
+  color: #d9dcdd;
+  background: transparent;
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+#contact-form button[type='submit'] {
+  background: transparent;
+  font-size: 0.95rem;
+  border: 2px solid white;
+  margin-top: 5%;
+  margin-left: 35%;
+  border-radius: 2px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.8em 0.8em 0.78em;
+  text-transform: uppercase;
+}
+
+#contact-form button:hover {
+  background: white;
+  color: #13386fe0;
+}
+
+/* #contact .social-icons li a i {
+  font-size: 1.2rem;
+  margin: 40px 10px 10px;
+  padding: 10px 14px 20px 10px;
+} */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.horizontal-list-bottom {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.horizontal-list-bottom li {
+  display: inline-block;
+  margin: 20px 30px 20px 30px;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
+.horizontal-list-bottom li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* common classes */
+
+.mb75px {
+  margin-bottom: 75px;
+}
+
+.ninety-percent {
+  width: 90%;
+  height: inherit;
+  background-color: blue;
+}
+
+.seventy-five-percent {
+  width: 75%;
+  height: inherit;
+  background-color: green;
+}
+
+.eighty-five-percent {
+  width: 85%;
+  height: inherit;
+  background-color: red;
+}
+
+.eighty-percent {
+  width: 85%;
+  height: inherit;
+}
+
+.mb-purple {
+  background-color: purple;
+}
+
+.mb-orange {
+  background-color: orange;
+}
+
+.mb-pink {
+  background-color: pink;
+}
+
+.mb-violet {
+  background-color: violet;
+}
+
+.nienty-five-percent {
+  width: 90%;
+  height: inherit;
+  background-color: slateblue;
+}
+
+.mb-azure {
+  background-color: burlywood;
+}
+
+.m-grey {
+  color: grey;
+}
+
+.m-mustard {
+  color: #b55f00;
+  margin-top: -9px;
+}
+
+/* css for testing */
+
+#container {
+  width: 70%;
+  height: 25%;
+  border: 2px solid;
+}
